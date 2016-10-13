@@ -224,7 +224,6 @@ public class SemanticAnalyzer {
 		///<presentContinuous> ::= (database)
 		private Object PresentContinuous(Node node) {
 
-			
 			return null;
 		}
 	

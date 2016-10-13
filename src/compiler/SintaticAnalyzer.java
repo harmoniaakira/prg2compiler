@@ -12,7 +12,7 @@ public class SintaticAnalyzer {
 	private List<Token> tokens;
 	private List<String> errors = new ArrayList<>();
 	private Token token;
-	private int pToken;
+	private int tokenIndex;
 	private Node root;
 
 	public SintaticAnalyzer(List<Token> tokens) {
@@ -20,11 +20,11 @@ public class SintaticAnalyzer {
 	}
 
 	private void readToken() {
-		token = tokens.get(pToken++);
+		token = tokens.get(tokenIndex++);
 	}
 	
 	public void analyze() {
-		pToken = 0;
+		tokenIndex = 0;
 		
 		readToken();
 		
@@ -221,11 +221,11 @@ public class SintaticAnalyzer {
 	
 	
 	private Token lookAhead(){
-		return tokens.get(pToken);
+		return tokens.get(tokenIndex);
 	}
 	
 	private Token lookEvenFurtherAhead(){
-		return tokens.get(pToken + 1);
+		return tokens.get(tokenIndex + 1);
 	}
 	
 	public boolean hasErrors() {

@@ -6,11 +6,13 @@ import enums.NodeType;
 
 public class Node {
 	
+	//ATTRIBUTES
 	private Node father;
 	private ArrayList<Node> sons = new ArrayList<Node>();
 	private NodeType type;
 	private Token token;
 
+	//CONSTRUCTORS
 	public Node(NodeType type) {
 		this.type = type;
 	}
@@ -20,6 +22,7 @@ public class Node {
 		this.type = NodeType.Token;
 	}
 
+	//METHODS
 	public void addSon(Node son) {
 		son.father = this;
 		sons.add(son);
@@ -27,13 +30,6 @@ public class Node {
 
 	public Node getSon(int pos) {
 		return sons.get(pos);
-	}
-
-	public String toString() {
-		if(token != null) {
-			return token.getImage();
-		}
-		return type.toString();
 	}
 
 	public Node getFather() {
@@ -63,9 +59,11 @@ public class Node {
 	public ArrayList<Node> getSons() {
 		return sons;
 	}
-
-	public void setSons(ArrayList<Node> sons) {
-		this.sons = sons;
-	}
 	
+	public String toString() {
+		if(token != null) {
+			return token.getImage();
+		}
+		return type.toString();
+	}
 }
