@@ -127,7 +127,7 @@ public class SemanticAnalyzer {
 			return null;
 		}
 		
-		//<adverb> ::= 'not' | &
+		//<adverb> ::= (database) | &
 		private Object Adverb(Node node) {
 
 			return null;

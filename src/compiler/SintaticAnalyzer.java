@@ -220,7 +220,7 @@ public class SintaticAnalyzer {
 	//-------------------------------------------------------------------------------
 	
 	
-	private Token lookAhead(){
+	private Token lookAhead() {
 		return tokens.get(tokenIndex);
 	}
 	
