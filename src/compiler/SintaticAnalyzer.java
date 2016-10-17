@@ -112,7 +112,7 @@ public class SintaticAnalyzer {
 		return node;
 	}
 		
-	//<article> ::= 'the' | 'this' | 'that' | 'those' | 'a' | 'an' | 'your' | 'their'
+	//<article> ::= 'the' | 'this' | 'that' | 'those' | 'your' | 'their'
 	private Node Article() {
 		Node node = new Node(NodeType.Article);
 		String tokenImage = token.getImage();
