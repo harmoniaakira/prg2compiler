@@ -145,7 +145,7 @@ public class SintaticAnalyzer {
 		return node;
 	}
 	
-	//<substantive> ::= (database) | <plural_substantive>
+	//<substantive> ::= substantive | <plural_substantive>
 	private Node Substantive() {
 		Node node = new Node(NodeType.Substantive);
 		
@@ -161,7 +161,7 @@ public class SintaticAnalyzer {
 		return node;
 	}
 	
-	//<plural_substantive> ::= (database)
+	//<plural_substantive> ::= plural_substantive
 	private Node Plural_Substantive() {
 		Node node = new Node(NodeType.Plural_Substantive);
 		
@@ -175,7 +175,7 @@ public class SintaticAnalyzer {
 		return node;
 	}
 	
-	//<adjective> ::= (database)
+	//<adjective> ::= adjective
 	private Node Adjective() {
 		Node node = new Node(NodeType.Adjective);
 		
@@ -189,7 +189,7 @@ public class SintaticAnalyzer {
 		return node;
 	}
 	
-	//<present> ::= (database)
+	//<present> ::= present
 	private Node Present() {
 		Node node = new Node(NodeType.Present);
 		
@@ -203,7 +203,7 @@ public class SintaticAnalyzer {
 		return node;
 	}
 	
-	///<presentcontinuous> ::= (database)
+	///<presentcontinuous> ::= presentContinuous
 	private Node PresentContinuous() {
 		Node node = new Node(NodeType.PresentContinuous);
 		

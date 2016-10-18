@@ -107,6 +107,35 @@ public class LexicalAnalyzer {
 		presentContinuousVerbs.add("going");
 		presentContinuousVerbs.add("doing");
 		presentContinuousVerbs.add("breaking");
+		presentContinuousVerbs.add("saying");
+		presentContinuousVerbs.add("doing");
+		presentContinuousVerbs.add("having");
+		presentContinuousVerbs.add("getting");
+		presentContinuousVerbs.add("making");
+		presentContinuousVerbs.add("thinking");
+		presentContinuousVerbs.add("taking");
+		presentContinuousVerbs.add("seeing");
+		presentContinuousVerbs.add("coming");
+		presentContinuousVerbs.add("wanting");
+		presentContinuousVerbs.add("using");
+		presentContinuousVerbs.add("finding");
+		presentContinuousVerbs.add("giving");
+		presentContinuousVerbs.add("telling");
+		presentContinuousVerbs.add("working");
+		presentContinuousVerbs.add("calling");
+		presentContinuousVerbs.add("asking");
+		presentContinuousVerbs.add("needing");
+		presentContinuousVerbs.add("feeling");
+		presentContinuousVerbs.add("becoming");
+		presentContinuousVerbs.add("graduating");
+		presentContinuousVerbs.add("leaving");
+		presentContinuousVerbs.add("keeping");
+		presentContinuousVerbs.add("begining");
+		presentContinuousVerbs.add("helping");
+		presentContinuousVerbs.add("showing");
+		presentContinuousVerbs.add("running");
+		presentContinuousVerbs.add("believing");
+		presentContinuousVerbs.add("writing");
 		
 		return presentContinuousVerbs;
 	}
