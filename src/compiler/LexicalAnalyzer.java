@@ -46,7 +46,8 @@ public class LexicalAnalyzer {
 		BufferedReader reader = new BufferedReader(file);
 		
 		line = reader.readLine().toLowerCase();
-			
+		System.out.println("Sentence: '" + line + "'\n");
+		
 		//Lexical Analysis
 		StringTokenizer tks = new StringTokenizer(line);
 		while(tks.hasMoreTokens()){
